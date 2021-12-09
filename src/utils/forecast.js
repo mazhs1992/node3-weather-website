@@ -27,6 +27,7 @@ const forecast = (long,lat,callback) => {
                 desc:body.current.weather_descriptions[0],
                 temp: body.current.temperature,
                 feels: body.current.feelslike,
+                time: body.location.localtime
                  
             })
         }

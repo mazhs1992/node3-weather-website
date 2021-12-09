@@ -38,7 +38,7 @@ weatherForm.addEventListener('submit', function (e) {
         }
       } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast.desc + '. Temperature : ' + data.forecast.temp + '. Feels like : ' + data.forecast.feels;
+        messageTwo.textContent = data.forecast.desc + '. Temperature : ' + data.forecast.temp + '. Feels like : ' + data.forecast.feels + '. Time :' + data.forecast.time;
         console.log(data.forecast);
       }
     });
